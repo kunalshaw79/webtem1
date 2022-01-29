@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    background-image: url("img6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+  }
+  .half {
+    background-color: rgba(86, 86, 86, 0.315);
+    width: 50%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    z-index: 1;
+  }
+  .txt1 {
+    font-size: 4rem;
+    color: white;
+  }
+  .inp {
+    height: 25px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .dabba {
+    position: absolute;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 30vh 11%;
+    height: 27%;
+    width: 300px;
+    backdrop-filter: blur(50px);
+  }
+  .nav {
+    display: absolute;
+    border-radius: 50%;
+    height: 40px;
+    margin: 3px 20px;
+    margin-bottom: 0px;
+  }
+  nav {
+    position: absolute;
+    z-index: 5;
+    margin: 20px 50px;
+    border: 2px solid white;
+    width: 95vw;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn:active {
+    transform: translateY(5px);
+    background-color: rgba(235, 193, 235, 0.521);
+  }
+  .btn {
+    background-color: transparent;
+    border: 2px solid white;
+    margin: 8px 3%;
+    height: 35px;
+    width: 9%;
+    color: white;
+    border-radius: 10px;
+  }
+  *{
+      color: white;
+  }
+  .head {
+      padding: 8px;
+      font-size: 2rem;
+  }
+  .abc{
+      padding: 0px;
+      margin: 0px;
+      visibility: hidden;
+  }
+  .slider1{
+      border: 2px solid;
+      position: absolute;
+      z-index: 4;
+      margin-top: 80vh;
+      margin-left: 11vw;
+      border-radius: 10px;
+  }
+  .slider{
+      position: relative;
+      display: inline;
+      height: 100px;
+      width: 140px;
+      margin: 3px;
+  }
+  .slider-h{
+      position: relative;
+      display: inline;
+      height: 100px;
+      width: 140px;
+      margin: 3px;
+      border: 5px solid;
+      border-radius: 10px;
+  }
+  .slidera{
+      width: 55px;
+      height: 30px;
+  }
+  .slidera:active{
+      transform: translateY(-10px);
+  }
+  .slidera:hover{
+      transform: translateY(-5px);
+  }

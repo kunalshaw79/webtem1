@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web tem</title>
+    <link rel="icon" href="img10.jpg" />
+  </head>
+  <link rel="stylesheet" href="style1.css">
+  <style>
+  </style>
+  <body>
+    <nav>
+      <image class="nav" src="kunal.png"></image>
+      <div class="head"><en class="abc">..........</en>NATURE</div>
+      <button class="btn">explore</button>
+    </nav>
+    <div class="slider1">
+        <image id="back" class="slidera"src="img10.png"></image>
+        <image id="a1" class="slider"src="img1.jpg"></image>
+        <image id="a2" class="slider"src="img2.jpg"></image>
+        <image id="a3" class="slider"src="img3.jpg"></image>
+        <image id="a4" class="slider"src="img4.jpg"></image>
+        <image id="a5" class="slider"src="img5.jpg"></image>
+        <image id="a6" class="slider-h"src="img6.jpg"></image>
+        <image id="a7" class="slider"src="img7.jpg"></image>
+        <image id="forward" class="slidera"src="img9.png"></image>
+    </div>
+    <div class="half">
+      <div class="dabba">
+        <en class="txt1">Discover</en> <br />
+        the unknown world <br>
+        <input class="inp" placeholder="Search" type="text" />
+      </div>
+    </div>
+  </body>
+  <script>
+      let btnf = document.getElementById('forward');
+      let btnb = document.getElementById('back');
+      let i=6;
+      btnf.addEventListener("click",fun1);
+      function fun1() {
+          if(i<7 && i>0){
+              i=i+1;
+              document.body.style.backgroundImage=`url('img${i}.jpg')`;
+              document.getElementById(`a${i}`).classList.add('slider-h');
+              document.getElementById(`a${i-1}`).classList.remove('slider-h');
+              document.getElementById(`a${i-1}`).classList.add('slider');
+          }
+      }
+      btnb.addEventListener("click",fun2);
+      function fun2() {
+          if(i<9 && i>1){
+              i=i-1;
+              document.body.style.backgroundImage=`url('img${i}.jpg')`;
+              document.getElementById(`a${i}`).classList.add('slider-h');
+              document.getElementById(`a${i+1}`).classList.remove('slider-h');
+              document.getElementById(`a${i+1}`).classList.add('slider');
+          }
+      }
+     
+      setTimeout( function fun3(){
+        alert('you can change backgrond-image by clicking forward and backward arrow');
+      }, 1000);
+  </script>
+</html>
