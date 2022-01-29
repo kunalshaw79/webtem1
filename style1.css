@@ -29,7 +29,7 @@ body {
   }
   .dabba {
     position: absolute;
-    border: 2px solid;
+     box-shadow: 20px 10px 20px 10px rgba(216, 219, 189, 0.651);
     border-radius: 10px;
     margin: 30vh 11%;
     height: 27%;
